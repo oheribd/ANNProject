@@ -1,0 +1,26 @@
+import spidev
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+
+def ReadChannel (channel):
+	adc = spi.xfer2([1,(8+channel)<<4,0])
+	data = ((adc[1]&3)<<8)+adc[2]
+	return data
+
+enter = input("Enter y : ")
+counter=0
+while enter == "y":
+    while enter == "y":
+    for i in range(12000):
+        if i == 4000:p
+            print('forActive')
+        level = ReadChannel(channel)
+        volt = level*5/1023
+        dbf.write(str(volt)+',')
+    spi.close()
+    dbf.write('\n')
+    dbf.close()
+    print('complete')
+    print("*********************")
+    

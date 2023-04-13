@@ -1,0 +1,7 @@
+import tensorflow as tf
+
+x_ = tf.placeholder(tf.float32, shape=[4,2], name="x-input")
+y_ = tf.placeholder(tf.float32, shape=[4,1], name="y-input")
+
+Theta1 = tf.Variable(tf.random_uniform([2,2], -1, 1), name="Theta1")
+Theta2 = tf.Variable(tf.random_uniform([2,1], -1, 1), name="Theta2")
